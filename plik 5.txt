@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 #include <stdlib.h>
 #define R 100
 char * isElement(char *tab, char znak)
