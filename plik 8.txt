@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> remotes/origin/branch-1
 
 void deleteMatrix(int*** ptab, int n)
 {
