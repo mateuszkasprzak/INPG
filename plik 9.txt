@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 #include <stdlib.h>
 int * add(int* tab, int n, int new_elem)
 {   int i=0, *ntab;
