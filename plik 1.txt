@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{ char z;
+float a, b;
+float c;
+    printf("Podaj znak dzialania\n");
+    scanf("%c", &z);
+    printf("Podaj liczbe a\n");
+    scanf("%f", &a);
+    printf("Podaj liczbe b\n");
+    scanf("%f", &b);
+    switch(z)
+    {
+        case '+' : c=a+b; printf("Wartosc wynosi: %f", c );break;
+        case '-' : c=a-b; printf("Wartosc wynosi: %f", c );break;
+        case '*' : c=a*b;printf("Wartosc wynosi: %f", c );break;
+        case '/' :  if(b!=0){c=a/b;printf("Wartosc wynosi: %f", c );}
+                    if(b=0) {printf("Blad");};break;
+        default: printf("Blad");break;
+    }
+
+    return 0;
+}
