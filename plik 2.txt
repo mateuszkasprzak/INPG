@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int i=0,l,c,o,wysokosc;
+c=i;
+scanf("%d",&wysokosc);
+l=wysokosc;
+system("cls");
+printf("%*c",wysokosc,'*');
+puts("");
+for(i;i<wysokosc-1;++i)
+{
+printf("%*c",l-=1,'*');
+c+=2;
+for(o=0;o<c;++o)
+{
+putchar('*');
+}
+puts("");
+}
+return 0;
+}
