@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+int *dyn(int r)
+{   int i;
+    int *tablica = (int*) malloc(r * sizeof(*tablica));
+    if(tablica==NULL) return NULL;
+
+    for(i=0;i<r;i++)
+    {
+        tablica[i]=2*i+1;
+    }
+    return tablica;
+}
+
+int main()
+{
+    int R,i=0;
+    int *tablica;
+    scanf("%d",&R);
+    tablica=dyn(R);
+    if(tablica!=NULL);
+    {
+        for(i;i<R;i++)
+            printf("%d\n",tablica[i]);
+        free(tablica);
+        tablica=NULL;
+    }
+
+    return 0;
+}
