@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define R 100
+char * isElement(char *tab, char znak)
+{
+    int i=0;
+    char *adres;
+    adres=0;
+    while(tab[i]!='\0' && adres==0)
+    {
+        if(tab[i]==znak)
+        {
+            adres=&tab[i];
+        }
+    i++;
+    }
+
+
+
+
+    return adres;
+}
+
+int main()
+{
+    char *z;
+    char znak='f';
+    char napis[R];
+    fgets(napis, R, stdin);
+    z=isElement(napis, znak);
+    if(z!=NULL)
+    {
+    printf("%c",*z);
+    }
+    else printf("nie ma");
+    return 0;
+}
