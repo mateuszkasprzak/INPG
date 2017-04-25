@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 void deleteMatrix(int*** ptab, int n)
 {
